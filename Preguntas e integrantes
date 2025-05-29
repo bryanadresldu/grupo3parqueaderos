@@ -1,0 +1,7 @@
+¿Que ventajas observaste al manejar todos los vehículos como Vehiculo?
+Reutilización del código y mayor flexibilidad al fomentar el uso de métodos de la superclase Vehiculo en las subclases Auto, Camioneta y Camioneta4x4, mediante la sobreescritura (Override)
+
+¿Por que es útil sobrecargar métodos para registrar entradas?
+Permite crear varios métodos que tengan el mismo nombre pero que funcionen con argumentos distintos, así el código se encarga de ejecutar diferentes acciones, dependiendo de los argumentos que se le pasan
+
+Integrantes: Bryan Angulo, Andrés Panchi, Henry Tonato, Santiago Vargas, Carlos Serrano
