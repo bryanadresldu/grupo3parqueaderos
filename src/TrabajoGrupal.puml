@@ -1,0 +1,56 @@
+@startuml
+
+package parqueaderoInteligente #Yellow {
+
+
+ 'representa datos o logica del negocio
+  package modelo #white {
+
+    class Vehiculo {
+      - placa : String
+      + Vehiculo()
+      + Vehiculo(placa : String)
+      + tarifaDiaria() : double
+      + registrarEntrada() : void
+      + registrarEntrada(placa : String) : void
+      + registrarEntrada(placa : String, hora : String) : void
+    }
+
+    class Auto {
+      + Auto(placa : String)
+      + tarifaDiaria() : double
+    }
+
+    class Camioneta {
+      + Camioneta(placa : String)
+      + tarifaDiaria() : double
+    }
+
+    class Camioneta4x4 {
+      + Camioneta4x4(placa : String)
+      + tarifaDiaria() : double
+    }
+  }
+
+
+'gestiona la logica y el flujo de la app
+  package controlador #white {
+    class Main {
+      + main(args : String[]) : void
+      + lista :ArrayList<Vehiculo>
+    }
+  }
+
+
+'viene a ser la vista
+  package vista #white {
+    class Main {}
+  }
+
+  Vehiculo <-- Auto
+  Vehiculo <-- Camioneta
+  Vehiculo <-- Camioneta4x4
+
+}
+
+@enduml
