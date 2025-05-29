@@ -46,7 +46,7 @@ public class Main {
                 case 4:
                     System.out.println("\n--- Tarifas ---");
                     for (Vehiculo v : lista) {
-                        System.out.println("Placa: " + v.placa + " | Tarifa diaria: $" + v.tarifaDiaria());
+                        System.out.println("Placa: " + v.getPlaca() + " | Tarifa diaria: $" + v.tarifaDiaria());
                     }
                     break;
 

@@ -1,5 +1,5 @@
 public class Vehiculo {
-    String placa;
+   private String placa;
 
     public Vehiculo() {}
 
@@ -23,5 +23,13 @@ public class Vehiculo {
     public void registrarEntrada(String placa, String hora) {
         this.placa = placa;
         System.out.println("Entrada registrada con placa: " + placa + " a las " + hora);
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 }
